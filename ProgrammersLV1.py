@@ -33,9 +33,50 @@ def solution(num1, num2):
         answer = -1
     return answer
   
+#07th  https://school.programmers.co.kr/learn/courses/30/lessons/120808
+def solution(numer1, denom1, numer2, denom2):
+    tmp1, tmp2 = denom1, denom2
+    numer1, denom1 = numer1*tmp2, denom1* tmp2
+    numer2, denom2 = numer2*tmp1, denom2*tmp1
+    tmp1 = numer1 + numer2
+    tmp2 = denom2
+    tmp3 = denom1
+    for i in range(min(tmp1, tmp2),0, -1):
+        if (tmp1 % i) == 0 and (tmp2 % i) == 0:
+            tmp3 = i
+            break
+    tmp1 = tmp1 / tmp3
+    tmp2 = denom1 / tmp3
+    answer = [int(tmp1), int(tmp2)]
+    return answer
+
 #08th  https://school.programmers.co.kr/learn/courses/30/lessons/120809
 def solution(numbers):
     answer = []
     for i in range(len(numbers)):
         answer.append(numbers[i]*2)
     return answer
+
+#10th  https://school.programmers.co.kr/learn/courses/30/lessons/120810
+def solution(num1, num2):
+    answer = num1 % num2
+    return answer
+
+#11th  https://school.programmers.co.kr/learn/courses/30/lessons/120811
+def solution(array):
+    for i in range(len(array)):
+        for x in range(i+1, len(array)):
+            if array[i] > array[x]:
+                array[i], array[x] = array[x], array[i]
+    y = int(len(array) // 2)
+    answer = array[y]
+    return answer
+
+
+
+#08th  https://school.programmers.co.kr/learn/courses/30/lessons/120809
+#08th  https://school.programmers.co.kr/learn/courses/30/lessons/120809
+#08th  https://school.programmers.co.kr/learn/courses/30/lessons/120809
+#08th  https://school.programmers.co.kr/learn/courses/30/lessons/120809
+#08th  https://school.programmers.co.kr/learn/courses/30/lessons/120809
+#08th  https://school.programmers.co.kr/learn/courses/30/lessons/120809
