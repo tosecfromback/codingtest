@@ -123,6 +123,7 @@ def solution(slice, n):
             answer = i
             break
     return answer
+
 #16th  https://school.programmers.co.kr/learn/courses/30/lessons/120817
 def solution(numbers):
     answer = 0
@@ -130,3 +131,163 @@ def solution(numbers):
         answer = answer + numbers[i]
     answer = answer / len(numbers)
     return answer
+
+#17th https://school.programmers.co.kr/learn/courses/30/lessons/120849
+import re
+def solution(my_string):
+    answer = re.sub('a|e|i|o|u', '', my_string)
+    return answer
+
+#18th https://school.programmers.co.kr/learn/courses/30/lessons/120898
+def solution(message):
+    answer = len(message) * 2
+    return answer
+
+#19th https://school.programmers.co.kr/learn/courses/30/lessons/120822
+def solution(my_string):
+    answer = my_string[::-1]
+    return answer
+
+#20th https://school.programmers.co.kr/learn/courses/30/lessons/120826
+def solution(my_string, letter):
+    answer = answer = my_string.replace(letter, '')
+    return answer
+
+#21th https://school.programmers.co.kr/learn/courses/30/lessons/120585
+def solution(array, height):
+    answer = 0
+    for i in range(len(array)):
+        if array[i] > height:
+            answer += 1
+    return answer
+
+#22th https://school.programmers.co.kr/learn/courses/30/lessons/120841
+def solution(dot):
+    answer = 0
+    if dot[0] > 0 and dot[1] > 0:
+        answer = 1
+    elif dot[0] < 0 and dot[1] > 0:
+        answer = 2
+    elif dot[0] < 0 and dot[1] < 0:
+        answer = 3
+    elif dot[0] > 0 and dot[1] < 0:
+        answer = 4
+    return answer
+
+#23th https://school.programmers.co.kr/learn/courses/30/lessons/120583
+def solution(array, n):
+    answer = 0
+    for i in range(len(array)):
+        if array[i] == n:
+            answer = answer + 1
+    return answer
+
+#24th https://school.programmers.co.kr/learn/courses/30/lessons/120824
+def solution(num_list):
+    answer = [0,0]
+    for i in range(len(num_list)):
+        if num_list[i] % 2 == 0:
+            answer[0] = answer[0] + 1
+        else:
+            answer[1] = answer[1] + 1
+    return answer
+
+#25th https://school.programmers.co.kr/learn/courses/30/lessons/120889
+def solution(sides):
+    max_num = max(sides)
+    sides.remove(max_num)
+    if sides[0] + sides[1] > max_num:
+        answer = 1
+    elif sides[0] + sides[1] <= max_num:
+        answer = 2
+    return answer
+
+#26th https://school.programmers.co.kr/learn/courses/30/lessons/120847
+def solution(numbers):
+    max1 = max(numbers)
+    numbers.remove(max1)
+    max2 = max(numbers)
+    numbers.remove(max2)
+    answer = max1 * max2
+    return answer
+
+#27th https://school.programmers.co.kr/learn/courses/30/lessons/120836
+def solution(n):
+    tmp = []
+    tmp_rvs = []
+    result = []
+    for i in range(1, n + 1 ):
+        if n % i == 0:
+            tmp.append(i)
+    tmp_rvs = list(reversed(tmp))
+    for i in range(len(tmp)):
+        result.append((tmp[i], tmp_rvs[i]))
+    answer = len(result)
+    return answer
+
+#28th https://school.programmers.co.kr/learn/courses/30/lessons/120854
+def solution(strlist):
+    answer = []
+    for i in range(len(strlist)):
+        answer.append(len(strlist[i]))
+    return answer
+
+#29th  https://school.programmers.co.kr/learn/courses/30/lessons/120821
+def solution(num_list):
+    answer = []
+    for i in range(len(num_list), 0, -1):
+        answer.append(num_list[i-1])
+    return answer
+
+#30th  https://school.programmers.co.kr/learn/courses/30/lessons/120833
+def solution(numbers, num1, num2):
+    answer = []
+    for i in range(num1, num2+1, +1):
+        answer.append(numbers[i])
+    return answer
+
+#31th  https://school.programmers.co.kr/learn/courses/30/lessons/120830
+def solution(n, k):
+    answer = (n  * 12000) + ((k - (n // 10)) * 2000)
+    return answer
+
+#32th  https://school.programmers.co.kr/learn/courses/30/lessons/120831
+def solution(n):
+    answer = 0
+    for i in range (1, n+1, 1):
+        if i % 2 == 0:
+            answer = answer + i
+    return answer
+
+#33th  https://school.programmers.co.kr/learn/courses/30/lessons/120829
+def solution(angle):
+    if 0 < angle < 90:
+        answer = 1
+    elif angle == 90:
+        answer = 2
+    elif 90 < angle < 180:
+        answer = 3
+    else:
+        answer = 4
+    return answer
+
+
+#34th  
+
+
+#35th  
+
+
+#36th  
+
+
+#37th  
+
+
+#38th  
+
+
+#39th  
+
+
+#40th 
