@@ -272,7 +272,10 @@ def solution(angle):
     return answer
 
 
-#34th  
+#34th  https://school.programmers.co.kr/learn/courses/30/lessons/120871
+def solution(n):
+    answer = [ x for x in range(1, 301) if x % 3 != 0 and not('3' in str(x))][n-1]
+    return answer
 
 
 #35th  
