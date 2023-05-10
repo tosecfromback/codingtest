@@ -1,4 +1,4 @@
-# billionmul
+# millionmul
 def solution(e, starts):
     num_list = [x+1 for x in range(e)]
     tmp_list = [x * y for x in num_list for y in num_list]
