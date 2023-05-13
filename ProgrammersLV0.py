@@ -278,17 +278,47 @@ def solution(n):
     return answer
 
 
-#35th  
+#35th  https://school.programmers.co.kr/learn/courses/30/lessons/120818
+    answer = 0
+    if price >= 500000:
+        answer = price * 0.8
+    elif 500000 > price >= 300000:
+        answer = price * 0.9
+    elif 300000 > price >= 100000:
+        answer = price * 0.95
+    elif 100000 > price:
+        answer = price
+    return int(answer)
+def solution(price):
+    answer = 0
+    if price >= 500000:
+        answer = price * 0.8
+    elif 500000 > price >= 300000:
+        answer = price * 0.9
+    elif 300000 > price >= 100000:
+        answer = price * 0.95
+    elif 100000 > price:
+        answer = price
+    return int(answer)
 
+#36th https://school.programmers.co.kr/learn/courses/30/lessons/120819
+def solution(money):
+    coffee = money // 5500
+    answer = [ coffee, (money - (coffee*5500))]
+    return answer
 
-#36th  
+#37th https://school.programmers.co.kr/learn/courses/30/lessons/120823
+n = int(input())
+for i in range(1, n+1):
+    print('*'*i) 
 
-
-#37th  
-
-
-#38th  
-
+#38th  https://school.programmers.co.kr/learn/courses/30/lessons/120825
+def solution(my_string, n):
+    answer = ''
+    for i in my_string:
+        answer += (i * n)
+    
+    return answer
 
 #39th  
 
