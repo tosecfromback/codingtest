@@ -320,7 +320,48 @@ def solution(my_string, n):
     
     return answer
 
-#39th  
+#39th https://school.programmers.co.kr/learn/courses/30/lessons/120835
 
 
-#40th 
+#40th https://school.programmers.co.kr/learn/courses/30/lessons/120834
+
+#41th https://school.programmers.co.kr/learn/courses/30/lessons/120837
+
+#42th https://school.programmers.co.kr/learn/courses/30/lessons/120838
+
+#43th https://school.programmers.co.kr/learn/courses/30/lessons/120839
+
+#44th https://school.programmers.co.kr/learn/courses/30/lessons/120840
+
+#45th 
+
+#46th 
+
+#47th 
+
+#48th 
+
+#49th 
+
+#50th
+
+#51th
+
+#52th
+
+#53th
+
+#54th
+
+#55th
+
+#56th
+
+#57th
+
+#58th
+
+#59th
+
+#60th
+
