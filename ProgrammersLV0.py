@@ -333,7 +333,17 @@ def solution(my_string, n):
 
 #44th https://school.programmers.co.kr/learn/courses/30/lessons/120840
 
-#45th 
+#45th https://school.programmers.co.kr/learn/courses/30/lessons/120956
+import re
+
+def solution(babbling):
+    answer = 0
+    
+    for i in range(len(babbling)):
+        babbling[i] = re.sub("aya|ye|woo|ma", "1", babbling[i])
+        if babbling[i].isdigit() == True:
+            answer+=1
+    return answer
 
 #46th 
 
