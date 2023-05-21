@@ -407,13 +407,13 @@ def solution(babbling):
             answer+=1
     return answer
 
-#46th 
+#46th https://school.programmers.co.kr/learn/courses/30/lessons/120875
 
-#47th 
+#47th https://school.programmers.co.kr/learn/courses/30/lessons/120876
 
-#48th 
+#48th https://school.programmers.co.kr/learn/courses/30/lessons/120866
 
-#49th 
+#49th https://school.programmers.co.kr/learn/courses/30/lessons/120923
 
 #50th
 
