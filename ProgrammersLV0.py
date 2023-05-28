@@ -415,11 +415,11 @@ def solution(babbling):
 
 #49th https://school.programmers.co.kr/learn/courses/30/lessons/120923
 
-#50th
+#50th https://school.programmers.co.kr/learn/courses/30/lessons/181890
 
-#51th
+#51th https://school.programmers.co.kr/learn/courses/30/lessons/120880
 
-#52th
+#52th https://school.programmers.co.kr/learn/courses/30/lessons/120878
 
 #53th
 
